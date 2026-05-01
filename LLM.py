@@ -10,7 +10,7 @@ if not api_key:
 # create client
 client = Groq(api_key=api_key)
 
-print("🤖 Chat started (type 'exit' to quit)\n")
+print("Chat started (type 'exit' to quit)\n")
 
 messages = []
 
@@ -38,4 +38,4 @@ while True:
         messages.append({"role": "assistant", "content": reply})
 
     except Exception as e:
-        print("❌ Error:", e)
+        print(" Error:", e)
